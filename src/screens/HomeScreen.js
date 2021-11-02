@@ -32,6 +32,17 @@ const anotherText = <Text h1> H1 tag </Text>;
             </TouchableOpacity> 
 
 
+           <Button
+           title="Counter"
+           onPress={() => navigation.navigate("Counter")}
+           /> 
+
+           <Button
+           title="Color Screen"
+           onPress={() => navigation.navigate("Color")}
+           /> 
+
+
         </View>
     )
 }
