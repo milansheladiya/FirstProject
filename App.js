@@ -9,7 +9,9 @@ import ListOfScreen from "./src/screens/ListOfScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/ColorScreen";
-
+import RandomDominos from "./src/screens/RandomDominos";
+import ColorAddRemoveScreen from "./src/screens/ColorAddRemoveScreen";
+import ColorCounter from "./src/Components/ColorCounter";
 
 
 const navigator = createStackNavigator(
@@ -23,9 +25,12 @@ const navigator = createStackNavigator(
     Image: ImageScreen,
     Counter : CounterScreen,
     Color : ColorScreen,
+    Domino : RandomDominos,
+    ColorAddRemove : ColorAddRemoveScreen,
+    ColorCounter : ColorCounter,
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "ColorAddRemove",
     defaultNavigationOptions: {
       title: "App",
     },
