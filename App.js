@@ -12,7 +12,8 @@ import ColorScreen from "./src/screens/ColorScreen";
 import RandomDominos from "./src/screens/RandomDominos";
 import ColorAddRemoveScreen from "./src/screens/ColorAddRemoveScreen";
 import ColorCounter from "./src/Components/ColorCounter";
-
+import TextScreen from "./src/screens/TextScreen";
+import BoxScreen from "./src/screens/BoxScreen";
 
 const navigator = createStackNavigator(
   {
@@ -28,9 +29,11 @@ const navigator = createStackNavigator(
     Domino : RandomDominos,
     ColorAddRemove : ColorAddRemoveScreen,
     ColorCounter : ColorCounter,
+    Text : TextScreen,
+    Box : BoxScreen,
   },
   {
-    initialRouteName: "ColorAddRemove",
+    initialRouteName: "Box",
     defaultNavigationOptions: {
       title: "App",
     },
